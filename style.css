@@ -1,5 +1,3 @@
-
-
 /* shared style */
 
 .secondery-bg {
@@ -172,7 +170,8 @@ main section {
   margin-bottom: 20px;
 }
 
-.experience-description, .experience-sub-title {
+.experience-description,
+.experience-sub-title {
   color: #757575;
 }
 
@@ -201,7 +200,9 @@ footer {
   width: 50%;
 }
 
-footer input[type="text"], footer input[type="email"], footer textarea {
+footer input[type="text"],
+footer input[type="email"],
+footer textarea {
   height: 64px;
   border-radius: 5px;
   background-color: white;
@@ -219,19 +220,49 @@ footer input[type="text"], footer input[type="email"], footer textarea {
 }
 
 @media screen and (max-width:576px) {
-  .skill-container, .resume-container, footer, .about-items {
+
+  .skill-container,
+  .resume-container,
+  footer,
+  .about-items,
+  .banner,
+  nav,
+  nav ul {
     flex-direction: column;
   }
 
-  footer, .about {
+  nav ul {
+    gap: 20px;
+  }
+
+  .btn-primary {
+    margin-bottom: 20px;
+  }
+
+  footer,
+  .about {
     padding: 20px;
+  }
+
+  .header {
+    background-image: none;
+  }
+
+  .banner {
+    margin: 20px;
   }
 
   .footer-column {
     width: 100%;
   }
 
-  footer input[type="text"], footer input[type="email"], footer textarea {
+  footer input[type="text"],
+  footer input[type="email"],
+  footer textarea {
     width: calc(100% - 40px);
+  }
+
+  .banner-profile-pic {
+    width: 100%;
   }
 }
